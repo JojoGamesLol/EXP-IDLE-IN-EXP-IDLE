@@ -56,9 +56,3 @@ var MainPanel = () => {
 var panel = ui.createStackLayout({
     children: [MainPanel()]
 });
-                              
-function UI_Panel() {
-    panel.children = [MainPanel()];
-}
-
-UI_Panel();
