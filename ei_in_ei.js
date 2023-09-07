@@ -24,18 +24,6 @@ var getPrimaryEquation = () => {
     return result;
 }
 
-var buyTypeInc = () => {
-     if (buyMode == 1) {
-         buyMode = 10;
-     }
-    if (buyMode == 10) {
-        buyMode = 100;
-    }
-    if (buyMode == 100) {
-        buyMode = 1;
-    }
-}
-
 var getSecondaryEquation = () => `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
 
 var MainPanel = () => {
@@ -46,7 +34,17 @@ var MainPanel = () => {
                     ui.createButton({
                             column: 0,
                             text: ()=> "Buy " + buyMode, 
-                            onClicked: ()=> {buyTypeInc();}
+                            onClicked: ()=> {
+                                if (buyMode == 1) {
+                                    buyMode = 10;
+                                }
+                                if (buyMode == 10) {
+                                    buyMode = 100;
+                                }
+                                if (buyMode == 100) {
+                                    buyMode = 1;
+                                }
+                            }
                     }),
              )} ]
         ]
