@@ -48,7 +48,7 @@ var MainPanel = () => {
                             text: ()=> `Buy ${buyMode}`, 
                             onClicked: ()=> {buyTypeInc();}
                     }),
-                ]
+             )} ]
         ]
    })
 }
