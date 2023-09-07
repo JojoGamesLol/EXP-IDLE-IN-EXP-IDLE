@@ -24,11 +24,16 @@ var getPrimaryEquation = () => {
     return result;
 }
 
-var init = () => {
-    
-    
-    theory.createBuyAllUpgrade(0, ft, BigNumber.from("ee5"));
-    theory.createAutoBuyerUpgrade(1, ft, BigNumber.from("ee15"));
+var buyTypeInc = () => {
+     if (buyMode == 1) {
+         buyMode = 10;
+     }
+    if (buyMode == 10) {
+        buyMode = 100;
+    }
+    if (buyMode == 100) {
+        buyMode = 1;
+    }
 }
 
 var getSecondaryEquation = () => `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
@@ -38,9 +43,12 @@ var MainPanel = () => {
         children: [
             ui.createStackLayout({
                 children: [
+                    ui.createButton({
+                            column: 0,
+                            text: ()=> `Buy ${buyMode}`, 
+                            onClicked: ()=> {buyTypeInc();}
+                    }),
                 ]
         ]
    })
 }
-
-init();
