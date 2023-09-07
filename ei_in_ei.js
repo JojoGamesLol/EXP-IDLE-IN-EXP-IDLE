@@ -17,6 +17,8 @@ var db = BigNumber.from("0.001");
 var b = BigNumber.ZERO;
 var x = BigNumber.ZERO;
 
+var currency;
+
 var getPrimaryEquation = () => {
     let result = "f(t+dt)=f(t) \\times e^{bxdt}";
  
@@ -24,6 +26,8 @@ var getPrimaryEquation = () => {
 }
 
 var init = () => {
+    ft = theory.createCurrency("f", "f");
+    
     theory.createBuyAllUpgrade(0, ft, BigNumber.from("ee5");
     theory.createAutoBuyerUpgrade(1, ft, BigNumber.from("ee15");
 }
