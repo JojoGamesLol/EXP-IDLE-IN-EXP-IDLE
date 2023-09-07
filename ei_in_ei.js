@@ -13,7 +13,12 @@ var version = "1.0.0";
 var ft = BigNumber.ONE;
 var dt = BigNumber.ONE
 var t = BigNumber.ZERO;
-var db = BigNumber.ZERO;
+var db = BigNumber.from("0.001");
 var b = BigNumber.ZERO;
 var x = BigNumber.ZERO;
 
+var getPrimaryEquation = () => {
+    let result = "f(t+dt)=f(t) \\times e^{bxdt}";
+ 
+    return result;
+}
