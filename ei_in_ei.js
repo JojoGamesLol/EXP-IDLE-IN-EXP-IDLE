@@ -26,10 +26,20 @@ var getPrimaryEquation = () => {
 }
 
 var init = () => {
-    ft = theory.createCurrency("f", "f");
+    currency = theory.createCurrency("f", "f");
+
+    //REGULAR UPG
+    //x
+    {
+        let getDesc = (level) => "q_1=" + getQ1(level).toString(0);
+        let getInfo = (level) => "q_1=" + getQ1(level).toString(0);
+        q1 = theory.createUpgrade(0, currency, new FreeCost());
+        q1.getDescription = (amount) => Utils.getMath(getDesc(q1.level));
+        q1.getInfo = (amount) => Utils.getMathTo(getInfo(q1.level), getInfo(q1.level + amount));
+    }
     
-    theory.createBuyAllUpgrade(0, ft, BigNumber.from("ee5");
-    theory.createAutoBuyerUpgrade(1, ft, BigNumber.from("ee15");
+    theory.createBuyAllUpgrade(0, currency, BigNumber.from("ee5");
+    theory.createAutoBuyerUpgrade(1, currency, BigNumber.from("ee15");
 }
 
 var getSecondaryEquation = () => `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
