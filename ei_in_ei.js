@@ -45,7 +45,7 @@ var MainPanel = () => {
                 children: [
                     ui.createButton({
                             column: 0,
-                            text: ()=> `Buy ${buyMode}`, 
+                            text: ()=> "Buy " + buyMode, 
                             onClicked: ()=> {buyTypeInc();}
                     }),
              )} ]
