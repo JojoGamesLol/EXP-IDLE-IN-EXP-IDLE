@@ -23,4 +23,4 @@ var getPrimaryEquation = () => {
     return result;
 }
 
-var getSecondaryEquation = () => theory.latexSymbol + `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
+var getSecondaryEquation = () => `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
