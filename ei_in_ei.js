@@ -52,3 +52,5 @@ var MainPanel = () => {
         ]
    })
 }
+
+MainPanel();
