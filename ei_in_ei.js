@@ -31,11 +31,11 @@ var init = () => {
     //REGULAR UPG
     //x
     {
-        let getDesc = (level) => "q_1=" + getQ1(level).toString(0);
-        let getInfo = (level) => "q_1=" + getQ1(level).toString(0);
-        q1 = theory.createUpgrade(0, currency, new FreeCost());
-        q1.getDescription = (amount) => Utils.getMath(getDesc(q1.level));
-        q1.getInfo = (amount) => Utils.getMathTo(getInfo(q1.level), getInfo(q1.level + amount));
+        let getDesc = (level) => "x=" + (level / 10);
+        let getInfo = (level) => "\\text{Each level increases 0.1 x};
+        x0 = theory.createUpgrade(0, currency, new FreeCost());
+        x0.getDescription = (amount) => Utils.getMath(getDesc(x0.level));
+        x0.getInfo = (amount) => "\\text{Each level increases 0.1 x}";
     }
     
     theory.createBuyAllUpgrade(0, currency, BigNumber.from("ee5");
