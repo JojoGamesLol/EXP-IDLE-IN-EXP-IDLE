@@ -24,16 +24,7 @@ var getPrimaryEquation = () => {
 }
 
 var init = () => {
-
-    //REGULAR UPG
-    //x
-    {
-        let getDesc = (level) => "x=" + (level / 10);
-        let getInfo = (level) => "\\text{Each level increases 0.1 x};
-        x0 = theory.createUpgrade(0, ft, new FreeCost());
-        x0.getDescription = (amount) => Utils.getMath(getDesc(x0.level));
-        x0.getInfo = (amount) => "\\text{Each level increases 0.1 x}";
-    }
+    
     
     theory.createBuyAllUpgrade(0, ft, BigNumber.from("ee5"));
     theory.createAutoBuyerUpgrade(1, ft, BigNumber.from("ee15"));
