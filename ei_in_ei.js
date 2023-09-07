@@ -23,4 +23,11 @@ var getPrimaryEquation = () => {
     return result;
 }
 
+var init = () => {
+    theory.createBuyAllUpgrade(0, ft, BigNumber.from("ee5");
+    theory.createAutoBuyerUpgrade(1, ft, BigNumber.from("ee15");
+}
+
 var getSecondaryEquation = () => `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
+
+init();
