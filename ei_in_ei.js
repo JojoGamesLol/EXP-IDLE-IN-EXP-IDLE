@@ -39,7 +39,7 @@ var buyTypeInc = () => {
 var getSecondaryEquation = () => `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
 
 var MainPanel = () => {
-   ui.createScrollView({
+   return ui.createScrollView({
         children: [
             ui.createStackLayout({
                 children: [
@@ -53,4 +53,8 @@ var MainPanel = () => {
    })
 }
 
-MainPanel();
+function UI_Panel() {
+    panel.children = [MainPanel()];
+}
+
+UI_Panel();
