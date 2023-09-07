@@ -33,4 +33,8 @@ var init = () => {
 
 var getSecondaryEquation = () => `t=${t} dt=${dt} f(t)=${ft} db=${db} b=${b} x=${x}`;
 
+var MainPanel = () => {
+   
+}
+
 init();
