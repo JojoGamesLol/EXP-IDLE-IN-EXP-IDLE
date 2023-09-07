@@ -30,7 +30,7 @@ var init = () => {
     {
         let getDesc = (level) => "x=" + (level / 10);
         let getInfo = (level) => "\\text{Each level increases 0.1 x};
-        x0 = theory.createUpgrade(0, currency, new FreeCost());
+        x0 = theory.createUpgrade(0, ft, new FreeCost());
         x0.getDescription = (amount) => Utils.getMath(getDesc(x0.level));
         x0.getInfo = (amount) => "\\text{Each level increases 0.1 x}";
     }
