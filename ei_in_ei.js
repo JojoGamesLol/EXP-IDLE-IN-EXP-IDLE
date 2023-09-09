@@ -17,6 +17,7 @@ var t = BigNumber.ZERO;
 var db = BigNumber.from("0.001");
 var b = BigNumber.ZERO;
 var x = BigNumber.ZERO;
+var buyMode = 1
 
 var getPrimaryEquation = () => {
     let result = "f(t+dt)=f(t) \\times e^{bxdt}";
