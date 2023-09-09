@@ -4,6 +4,7 @@ import { parseBigNumber, BigNumber } from "../api/BigNumber";
 import { theory } from "../api/Theory";
 import { Utils } from "../api/Utils";
 import { ui } from ".../api/ui/UI";
+import { Aspect } from "../api/ui/properties/Aspect";
 
 var id = "ei_in_ei";
 var name = "EXP IDLE IN EXP IDLE";
